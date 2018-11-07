@@ -131,7 +131,7 @@
 
 .image {
   display: inline-block;
-  padding: 40px 50px 40px;
+  padding: 40px 50px;
 }
 
 .image:first-child {
@@ -140,6 +140,11 @@
 
 .image:last-child {
   padding-right: 0;
+}
+
+.div_float {
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .p_float {
