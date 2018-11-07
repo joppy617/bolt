@@ -142,22 +142,13 @@
   padding-right: 0;
 }
 
-.div_table {
-  color: #4e4e4e;
-  display: table;
-  padding-top: 50px;
-  padding-bottom: 70px;
-  margin-left: 200px;
+.p_float {
+  margin-left: 180px;
 }
 
-.p_table_cell, .button_table_cell {
-  display: table-cell;
-}
-
-.p_table_cell {
-  text-align: center;
-  padding-right: 90px;
-  width: 530px;
+.button-right {
+  float: right;
+  margin: 0 90px;
 }
 
 .sircle_background {
