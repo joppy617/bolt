@@ -22,11 +22,6 @@ body {
   z-index: 1000;
 }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-
 .inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -266,6 +261,8 @@ body {
 
 .footer {
   background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .copyright {
