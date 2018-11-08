@@ -248,6 +248,7 @@ h1 {
   background-color: #f2f2f2;
   border: none;
   outline: none;
+  transition-duration: .3s;
 }
 
 .icons {
