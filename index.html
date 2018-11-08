@@ -5,40 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <meta class="title" content="Bolt - Free Bootstrap 3 Theme">
     <meta name="description" content="This is my portfolio site.">
-    <meta class="keywords" content="bolt, bootstrap, portfolio">
+    <meta name="keywords" content="bolt, bootstrap, portfolio">
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('.navToggle').click(function() {
+          $(this).toggleClass('active');
+
+          if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+          } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+        });
+      });
+    </script>
   </head>
   <body>
 
-  <div class="wrapper">
-    <header class="header">
-      <nav class="inner clearfix">
-        <div class="nav-left">
-          <p class="nav-icon"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-        </div>
-        <div class="nav-right">
-          <a href="" class="nav-button button">Contact</a>
-        </div>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="inner  clearfix">
+          <div class="nav-left">
+            <p class="nav-icon"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+          </div>
+          <div class="nav-right type-pc-tab">
+            <a href="" class="nav-button button">Contact</a>
+          </div>
+
+          <nav class="globalMenuSp type-phone-menu type-phone">
+            <ul>
+              <li><a href="#">Menu1</a></li>
+              <li><a href="#">Menu2</a></li>
+              <li><a href="#">Menu3</a></li>
+              <li><a href="#">Menu4</a></li>
+              <li><a href="#">Menu5</a></li>
+            </ul>
+          </nav>
+          <div class="navToggle type-phone-nav  type-phone">
+            <span></span><span></span><span></span><span>menu</span>
+          </div>
+
+        </nav>
+      </header>
 
       <main class="main-contents">
         <section class="key-visual">
           <div class="inner">
             <h1 class="main-title">Bolt Theme</h1>
-            <p class="sub-title">FREE BOOTSTRAP THEMES</p>
+            <p class="sub-title">FREE BOOTSTRAP THEMES<i class="fa fa-bars" aria-hidden="true"></i></p>
           </div>
         </section>
 
         <article class="about">
-          <div class="inner clearfix">
+          <div class="inner about-inner clearfix">
             <div class="about-left">
                 <img src="img/iphone.png" alt="">
             </div>
@@ -115,12 +142,13 @@
         </section>
       </main>
 
-    <footer class="footer">
-      <div class="inner">
-        <p class="copyright">Crafted with❤By BlackTie,co.</p>
-      </div>
-    </footer>
-  </div>
-    <script src="js/script.js"></script>
+      <footer class="footer">
+        <div class="inner">
+          <p class="copyright">Crafted with❤By BlackTie,co.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js">
+    </script>
   </body>
 </html>
