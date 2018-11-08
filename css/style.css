@@ -10,6 +10,10 @@ body {
   clear: both;
 }
 
+h1 {
+  font-size: 24px;
+}
+
 .wrapper {
   background-color: #f2f2f2;
 }
@@ -27,40 +31,36 @@ body {
   margin: 0 auto;
 }
 
-.header-inner {
+.header {
   padding: 15px 0;
 }
 
-.skill-inner {
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
-
-.icon-inner {
-  padding: 200px 0;
-  text-align: center;
-  font-size: 0;
-}
-
-.about-inner {
-  padding-top: 50px;
+.main-contents {
+  padding-top: 80px;
 }
 
 .key-visual {
-  padding-top: 65px;
+  padding: 250px 0;
+  text-align: center;
 }
 
 .about-visual {
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
 .image-visual {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
 
 .skill-visual {
   background-color: #4e4e4e;
+  padding: 70px 0 100px;
+}
+
+.icon-visual {
+  padding: 200px 0;
+  font-size: 0;
 }
 
 .article-left img {
@@ -120,11 +120,6 @@ body {
 }
 
 
-.key-inner {
-  padding: 250px 0;
-  text-align: center;
-}
-
 .main_title {
   font-size: 90px;
   font-weight: 700;
@@ -147,6 +142,7 @@ body {
   float: right;
   width: 60%;
   text-align: center;
+  line-height: 25px;
   word-wrap: break-word;
   color: white;
 }
@@ -168,8 +164,7 @@ body {
 
 .div_image {
   font-size: 0;
-  margin-top: 40px;
-  margin-bottom: 90px;
+  margin: 40px 0 90px;
 }
 
 .image {
@@ -192,11 +187,12 @@ body {
 
 .div_float {
   text-align: center;
+  margin-left: 140px;
 }
 
 .p_float {
   float: left;
-  width: 600px;
+  width: 60%;
 }
 
 .button-right {
@@ -206,6 +202,7 @@ body {
 
 .div_circle_photo {
   text-align: center;
+  margin-top: 50px;
   font-size: 0;
 }
 
@@ -214,9 +211,8 @@ body {
 }
 
 .circle-title {
-  color: #c0c0c0;
+  color: white;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .circle_photo {
@@ -236,8 +232,8 @@ body {
   padding-right: 0;
 }
 
-.circle_photo p {
-  padding-top: 10px;
+.circle_photo_description {
+  margin-top: 20px;
   font-size: 16px;
   color: white;
 }
@@ -250,14 +246,12 @@ body {
   font-size: 70px;
   color: #74cfae;
   background-color: #f2f2f2;
-  transition-duration: .3s;
   border: none;
   outline: none;
 }
 
-.btn-item:active {
-  color: #f2f2f2;
-  background-color: #74cfae;
+.icons {
+  text-align: center;
 }
 
 .btn-item:hover {
@@ -266,8 +260,7 @@ body {
 
 .footer {
   background-color: #74cfae;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
 }
 
 .copyright {
