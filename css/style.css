@@ -246,13 +246,12 @@ body {
   background: white;
   color: #000;
   text-align: center;
-  transform: translateY(-100%);
-  transition: all 0.6s;
+  transform: translateY(-200%);
+  transition: all 0.5s;
   width: 100%;
 }
 
 .type-phone-menu ul {
-  /*background: #74cfae;*/
   background: white;
   margin: 0 auto;
   padding: 0;
@@ -276,6 +275,11 @@ body {
   color: #000;
   text-decoration: none;
   padding: 1em 0;
+  transition: .3s;
+}
+
+.type-phone-menu ul li a:hover {
+  color: #74cfae;
 }
 
 .type-phone-menu.active {
@@ -285,25 +289,28 @@ body {
 .navToggle {
   display: block;
   position: fixed;
-  right: 13px;
-  top: 12px;
-  width: 42px;
-  height: 51px;
+  padding: 10px;
+  right: 10px;
+  top: 15px;
+  width: 30px;
+  height: 28px;
   cursor: pointer;
   z-index: 3;
   background: white;
   text-align: center;
+  border: 1px solid #ddd;
+  border-radius:  4px;
 }
 
 .navToggle span {
   display: block;
   position: absolute;
   width: 30px;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px #ddd;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  left: 6px;
+  left: 10px;
 }
 
 .navToggle span:nth-child(1) {
@@ -320,7 +327,7 @@ body {
 
 .navToggle span:nth-child(4) {
   border: none;
-  color: black;
+  color: #ddd;
   font-size: 9px;
   font-weight: bold;
   top: 34px;
@@ -328,8 +335,8 @@ body {
 
 /* 最初のspanをマイナス45度に */
 .navToggle.active span:nth-child(1) {
-  top: 18px;
-  left: 6px;
+  top: 14px;
+  left: 10px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -338,15 +345,14 @@ body {
 /* 2番目と3番目のspanを45度に */
 .navToggle.active span:nth-child(2),
 .navToggle.active span:nth-child(3) {
-  top: 18px;
+  top: 14px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
+@media screen and (min-width:767px) {
 
-
-@media screen and (min-width:766px) {
   .type-phone {
     display: none;
   }
@@ -358,88 +364,34 @@ body {
     padding-bottom: 25px;
   }
 
-  .inner {
-    max-width: 97%;
-  }
-
   .about-left {
     float: none;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   .about-right {
     float: none;
+    margin-top: 35px;
     width: 100%;
     text-align: center;
   }
 
   .about-right-title {
-    margin-top: 20px;
-  }
-
-  .work-content {
-    text-align: center;
-    margin-bottom: 80px;
-  }
-
-  .work-content-link {
-    margin: 0;
-    display: block;
-  }
-
-  .work-content-link:nth-child(n+4) {
-    margin-top: 0;
-  }
-
-  .work-content-link:nth-child(3n) {
-    margin-bottom: 80px;
-  }
-
-  .work-bottom {
-    width: 100%;
     margin: 0;
   }
 
-  .work-bottom-text {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .work-bottom-link {
-    margin: 70px auto 0;
-    display: inline-block;
-    float: none;
+  .about-right-text {
+    margin-top: 35px;
   }
 
   .skill-circle-photo {
     display: block;
     margin: 0 0 88px 0;
   }
-  .skill-circle-photo:last-child {
-    margin-bottom: 0;
-  }
+
 }
 
-
 @media screen and (max-width:766px) {
-  .inner {
-    max-width: 97%;
-  }
-
-  .
-
-  .key-visual {
-    padding: 160px 0 130px;
-  }
-
-  .main-title {
-    font-size: 80px;
-  }
-
-  .sub-title {
-    font-size: 30px;
-    margin-top: 20px;
-  }
 
   .about {
     padding: 50px 15px 20px;
@@ -460,45 +412,22 @@ body {
     width: 100%;
   }
 
-  .work-content {
-    text-align: center;
+  .key-visual {
+    padding: 160px 0 130px;
   }
 
-  .work-content-link {
-    margin: 0;
-    display: block;
+  .main-title {
+    font-size: 80px;
   }
 
-  .work-content-link:nth-child(n+4) {
-    margin-top: 0;
-  }
-
-  .work-content-link:nth-child(3n) {
-    margin: 0 0 80px 0;
-  }
-
-  .work-bottom {
-    width: 100%;
-    margin: 0;
-  }
-
-  .work-bottom-text {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .work-bottom-link {
-    margin: 70px auto 0;
-    display: inline-block;
-    float: none;
+  .sub-title {
+    font-size: 30px;
+    margin-top: 20px;
   }
 
   .skill-circle-photo {
     display: block;
     margin: 0 0 88px 0;
-  }
-  .skill-circle-photo:last-child {
-    margin-bottom: 0;
   }
 
   .icon-series {
@@ -520,3 +449,56 @@ body {
   }
 }
 
+@media screen and (max-width:1199px) {
+
+  .inner {
+    max-width: 97%;
+  }
+
+  .work {
+    text-align: center;
+  }
+
+  .work-content {
+    text-align: center;
+    margin: 60px 0 80px;
+    display: inline-block;
+  }
+
+  .work-content-link {
+    margin: 0;
+    display: block;
+  }
+
+  .work-content-link:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  .work-content-link:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .work-content-link:last-child {
+    margin-bottom: 0;
+  }
+
+  .work-bottom {
+    width: 100%;
+    margin: 0;
+  }
+
+  .work-bottom-text {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .work-bottom-link {
+    margin: 70px auto 0;
+    display: inline-block;
+    float: none;
+  }
+
+  .skill-circle-photo:last-child {
+    margin-bottom: 0;
+  }
+}
