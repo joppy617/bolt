@@ -365,19 +365,13 @@ body {
   }
 
   .about-left {
-    float: none;
     margin: 0 auto 20px;
   }
 
   .about-right {
-    float: none;
     margin-top: 35px;
     width: 100%;
     text-align: center;
-  }
-
-  .about-right-title {
-    margin: 0;
   }
 
   .about-right-text {
@@ -398,18 +392,17 @@ body {
   }
 
   .about-left {
-    float: none;
-    margin: 0;
+    margin: 0 0 20px 0;
     width: 100%;
     text-align: center;
   }
-  .about-left img {
-    display: inline-block;
-  }
 
   .about-right {
-    float: none;
     width: 100%;
+  }
+
+  .about-right-text {
+    margin: 35px 0 0 0;
   }
 
   .key-visual {
@@ -455,6 +448,18 @@ body {
     max-width: 97%;
   }
 
+  .about-left {
+    float: none;
+  }
+
+  .about-right {
+    float: none;
+  }
+
+  .about-right-title {
+    margin: 0;
+  }
+
   .work {
     text-align: center;
   }
@@ -466,8 +471,8 @@ body {
   }
 
   .work-content-link {
-    margin: 0;
     display: block;
+    margin: 0;
   }
 
   .work-content-link:nth-child(n+4) {
